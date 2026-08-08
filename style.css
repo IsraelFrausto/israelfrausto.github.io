@@ -351,6 +351,8 @@ a:hover .arrow {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: scale(1.42);
+  transform-origin: 50% 34%;
   transition:
     filter 500ms ease,
     transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -359,7 +361,7 @@ a:hover .arrow {
 
 .hero-portrait:hover img {
   filter: none;
-  transform: scale(1.025);
+  transform: scale(1.46);
 }
 
 .portrait-index {
