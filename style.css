@@ -1186,6 +1186,26 @@ a:hover .arrow {
   }
 }
 
+/* The practice band holds one row down to 790px, where its five terms no
+   longer fit. Switch to the centered, divider-free treatment at that point so
+   a wrapped row never starts with an orphaned divider. */
+@media (max-width: 800px) {
+  .practice-list {
+    justify-content: center;
+    padding-block: 12px;
+  }
+
+  .practice-list li,
+  .practice-list li:first-child,
+  .practice-list li:last-child {
+    padding: 8px 14px;
+  }
+
+  .practice-list li + li::before {
+    display: none;
+  }
+}
+
 @media (max-width: 760px) {
   .site-header {
     padding-top: 10px;
@@ -1227,21 +1247,6 @@ a:hover .arrow {
 
   .hero-portrait {
     max-width: 268px;
-  }
-
-  .practice-list {
-    justify-content: center;
-    padding-block: 12px;
-  }
-
-  .practice-list li,
-  .practice-list li:first-child,
-  .practice-list li:last-child {
-    padding: 8px 14px;
-  }
-
-  .practice-list li + li::before {
-    display: none;
   }
 
   .statement {
@@ -1370,7 +1375,7 @@ a:hover .arrow {
   }
 
   .nav-links {
-    gap: 13px;
+    gap: clamp(12px, 4.4vw, 18px);
   }
 
   .nav-contact span {
