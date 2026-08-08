@@ -89,18 +89,18 @@
 
     <main id="main">
       <section class="hero shell" id="top">
-        <div class="hero-copy reveal">
-          <p class="status-line">
-            <span class="status-dot" aria-hidden="true"></span>
-            Toronto, Canada · Building Glouva
-          </p>
+        <p class="status-line reveal">
+          <span class="status-dot" aria-hidden="true"></span>
+          Toronto, Canada · Building Glouva
+        </p>
 
-          <h1>
-            Business thinking.<br>
-            <em>Creative direction.</em>
-          </h1>
+        <h1 class="reveal">
+          Business thinking.<br>
+          <em>Creative direction.</em>
+        </h1>
 
-          <div class="hero-intro">
+        <div class="hero-base">
+          <div class="hero-intro reveal">
             <p>
               I’m Israel Frausto — a marketer with a background in finance,
               building brands and digital systems with clarity, direction, and
@@ -126,43 +126,41 @@
               </a>
             </div>
           </div>
-        </div>
 
-        <figure class="hero-portrait reveal">
-          <div class="portrait-frame">
-            <img
-              src="/profile-hero.webp"
-              alt="Israel Frausto in Toronto"
-              width="1122"
-              height="1402"
-            >
-            <span class="portrait-index" aria-hidden="true">01</span>
-          </div>
-          <figcaption>
-            <div>
-              <span>Current role</span>
-              <strong>Founder &amp; CEO</strong>
+          <figure class="hero-portrait reveal">
+            <div class="portrait-frame">
+              <img
+                src="/profile-hero.webp"
+                alt="Israel Frausto in Toronto"
+                width="1122"
+                height="1402"
+              >
             </div>
-            <a href="https://glouva.ca" target="_blank" rel="noopener noreferrer">
-              Glouva
-              <svg class="arrow" aria-hidden="true" viewBox="0 0 16 16" fill="none">
-                <path d="M5 11 11 5M6 5h5v5" />
-              </svg>
-            </a>
-          </figcaption>
-        </figure>
+            <figcaption>
+              <div>
+                <span>Current role</span>
+                <strong>Founder &amp; CEO</strong>
+              </div>
+              <a href="https://glouva.ca" target="_blank" rel="noopener noreferrer">
+                Glouva
+                <svg class="arrow" aria-hidden="true" viewBox="0 0 16 16" fill="none">
+                  <path d="M5 11 11 5M6 5h5v5" />
+                </svg>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
-      <div class="discipline-bar" role="group" aria-label="Areas of practice">
-        <div class="discipline-track">
-          <span>Brand strategy</span><i></i>
-          <span>Digital growth</span><i></i>
-          <span>E-commerce</span><i></i>
-          <span>Financial thinking</span><i></i>
-          <span>Content systems</span><i></i>
-          <span aria-hidden="true">Brand strategy</span><i aria-hidden="true"></i>
-          <span aria-hidden="true">Digital growth</span><i aria-hidden="true"></i>
-          <span aria-hidden="true">E-commerce</span><i aria-hidden="true"></i>
+      <div class="practice-band">
+        <div class="shell">
+          <ul class="practice-list" role="list" aria-label="Areas of practice">
+            <li>Brand strategy</li>
+            <li>Digital growth</li>
+            <li>E-commerce</li>
+            <li>Financial thinking</li>
+            <li>Content systems</li>
+          </ul>
         </div>
       </div>
 
@@ -217,10 +215,13 @@
             <p>Current venture</p>
           </div>
 
+          <div class="venture-head reveal">
+            <p class="venture-kicker">Founded in Toronto · 2024</p>
+            <h2>Glouva<span>.</span></h2>
+          </div>
+
           <div class="venture-grid">
             <div class="venture-copy reveal">
-              <p class="venture-kicker">Founded in Toronto · 2024</p>
-              <h2>Glouva<span>.</span></h2>
               <p class="venture-description">
                 A selective growth studio connecting brand, digital presence,
                 acquisition, and conversion into one clearer commercial path.
@@ -238,16 +239,20 @@
               </a>
             </div>
 
-            <div class="system-visual reveal" role="img" aria-label="Direction, system, and growth">
-              <div class="system-orbit orbit-one"></div>
-              <div class="system-orbit orbit-two"></div>
-              <div class="system-axis axis-horizontal"></div>
-              <div class="system-axis axis-vertical"></div>
-              <div class="system-core">G</div>
-              <span class="system-word word-one">Direction</span>
-              <span class="system-word word-two">System</span>
-              <span class="system-word word-three">Growth</span>
-            </div>
+            <ul class="venture-model" role="list">
+              <li class="reveal">
+                <h3>Direction</h3>
+                <p>Positioning, narrative, and brand systems.</p>
+              </li>
+              <li class="reveal">
+                <h3>System</h3>
+                <p>Digital presence and content built to hold up.</p>
+              </li>
+              <li class="reveal">
+                <h3>Growth</h3>
+                <p>Acquisition and conversion, working together.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -282,11 +287,11 @@
                 Building a selective growth studio focused on brand systems,
                 digital growth, and e-commerce.
               </p>
-              <div class="tag-row">
-                <span>Strategy</span>
-                <span>Brand systems</span>
-                <span>Digital growth</span>
-              </div>
+              <ul class="tag-row" role="list">
+                <li>Strategy</li>
+                <li>Brand systems</li>
+                <li>Digital growth</li>
+              </ul>
             </div>
           </article>
 
@@ -362,22 +367,23 @@
           </div>
 
           <div class="credentials-layout">
-            <div class="education-list reveal">
-              <article>
+            <div class="education-list">
+              <p class="column-label reveal">Education</p>
+              <article class="reveal">
                 <span>2024 — 2026</span>
                 <div>
                   <h3>Business — Marketing Diploma</h3>
                   <p>George Brown Polytechnic · Toronto</p>
                 </div>
               </article>
-              <article>
+              <article class="reveal">
                 <span>2017 — 2021</span>
                 <div>
                   <h3>Bachelor’s in Finance and Banking</h3>
                   <p>Escuela Bancaria y Comercial · Mexico</p>
                 </div>
               </article>
-              <article>
+              <article class="reveal">
                 <span>2024</span>
                 <div>
                   <h3>E-commerce and Digital Marketing</h3>
@@ -386,16 +392,16 @@
               </article>
             </div>
 
-            <div class="capability-panel reveal">
-              <p>Working capabilities</p>
-              <div class="capability-list">
-                <span>Brand strategy</span>
-                <span>Digital marketing</span>
-                <span>E-commerce</span>
-                <span>Content systems</span>
-                <span>Market research</span>
-                <span>Financial analysis</span>
-              </div>
+            <div class="capability-column">
+              <p class="column-label reveal">Working capabilities</p>
+              <ul class="capability-list" role="list">
+                <li class="reveal">Brand strategy</li>
+                <li class="reveal">Digital marketing</li>
+                <li class="reveal">E-commerce</li>
+                <li class="reveal">Content systems</li>
+                <li class="reveal">Market research</li>
+                <li class="reveal">Financial analysis</li>
+              </ul>
             </div>
           </div>
         </div>

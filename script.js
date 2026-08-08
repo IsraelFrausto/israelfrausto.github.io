@@ -40,3 +40,29 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
+const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
+const spied = ["#top", ...navLinks.map((link) => link.getAttribute("href"))]
+  .map((id) => document.querySelector(id))
+  .filter(Boolean);
+
+if ("IntersectionObserver" in window && spied.length) {
+  const setActive = (id) => {
+    navLinks.forEach((link) =>
+      link.classList.toggle("is-active", link.getAttribute("href") === id),
+    );
+  };
+
+  const navObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActive(`#${entry.target.id}`);
+        }
+      });
+    },
+    { rootMargin: "-45% 0px -45% 0px" },
+  );
+
+  spied.forEach((section) => navObserver.observe(section));
+}
